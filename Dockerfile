@@ -16,4 +16,4 @@ COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
 COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
 
 EXPOSE 36000
-ENTRYPOINT ["java","-cp","app:app/lib/*","com.TradeProject.TradeEngine.TradeEngine.TradeEngineApplication"]
+ENTRYPOINT ["java","-cp","app:app/lib/*","com.example.TradeProject.ReportingService.ReportingServiceApplication"]
