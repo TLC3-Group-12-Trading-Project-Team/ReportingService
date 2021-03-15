@@ -1,0 +1,7 @@
+version: '2'
+services:
+  reporting-service-prod:
+    container_name: reporting-service-prod
+    image: elijahahianyo/trade-project:reporting-service-prod
+    ports:
+      - 36000:36000
