@@ -1,0 +1,10 @@
+version: '2'
+services:
+  reporting-service-prod:
+    container_name: reporting-service-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: reporting-service-prod
+    ports:
+      - 36000:36000
