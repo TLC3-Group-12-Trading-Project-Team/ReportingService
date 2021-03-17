@@ -1,4 +1,4 @@
-package com.example.reportingService.redis.dto;
+package com.TradeProject.ReportingService.redis.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

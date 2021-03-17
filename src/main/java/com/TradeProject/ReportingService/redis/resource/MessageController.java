@@ -1,6 +1,6 @@
-package com.example.reportingService.redis.resource;
+package com.TradeProject.ReportingService.redis.resource;
 
-import com.example.reportingService.redis.service.ReportMessagePublisher;
+import com.TradeProject.ReportingService.redis.service.ReportMessagePublisher;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

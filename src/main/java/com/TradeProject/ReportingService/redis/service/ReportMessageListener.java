@@ -1,6 +1,6 @@
-package com.example.reportingService.redis.service;
+package com.TradeProject.ReportingService.redis.service;
 
-import com.example.reportingService.redis.dto.MessageDto;
+import com.TradeProject.ReportingService.redis.dto.MessageDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.connection.Message;

@@ -1,6 +1,6 @@
-package com.example.reportingService.redis.config;
+package com.TradeProject.ReportingService.redis.config;
 
-import com.example.reportingService.redis.service.ReportMessageListener;
+import com.TradeProject.ReportingService.redis.service.ReportMessageListener;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -19,11 +19,6 @@ public class RedisConfig {
     private String channel;
 
     private ChannelTopic subChannel = ChannelTopic.of("orderValidation");
-
-    @Bean
-    public LettuceConnectionFactory lettuceConnectionFactory() {
-        return new LettuceConnectionFactory();
-    }
 
     @Bean
     public RedisTemplate<String, Object> redisTemplate(LettuceConnectionFactory lettuceConnectionFactory) {

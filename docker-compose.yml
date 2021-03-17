@@ -8,3 +8,9 @@ services:
     image: reporting-service-prod
     ports:
       - 36000:36000
+    networks:
+      - trade_project
+
+networks:
+  trade_project:
+    external: true
