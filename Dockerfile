@@ -5,9 +5,10 @@ WORKDIR /workspace/app
 COPY gradle gradle
 COPY build.gradle settings.gradle gradlew ./
 COPY src src
-
+RUN ls -a /root
 RUN target=/root/.gradle ./gradlew build -x test
 RUN mkdir -p build/libs/dependency && (cd build/libs/dependency; jar -xf ../*.jar)
+
 FROM openjdk:15-jdk-alpine
 VOLUME /tmp
 ARG DEPENDENCY=/workspace/app/build/libs/dependency
